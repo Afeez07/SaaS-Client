@@ -4,7 +4,7 @@ import { ArrowRight, UserPlus } from "lucide-react"
 import Link from "next/link"
 
 export default async function SignupPage(props: {
-  searchParams: Promise<{ error?: string }>
+  searchParams: Promise<{ error?: string, message?: string }>
 }) {
   const searchParams = await props.searchParams
   return (
@@ -32,6 +32,11 @@ export default async function SignupPage(props: {
               {searchParams?.error && (
                 <div className="p-4 text-sm text-rose-700 bg-rose-50 border border-rose-200 rounded-xl font-medium animate-in slide-in-from-top-2">
                   {searchParams.error}
+                </div>
+              )}
+              {searchParams?.message && (
+                <div className="p-4 text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-xl font-medium animate-in slide-in-from-top-2">
+                  {searchParams.message}
                 </div>
               )}
               

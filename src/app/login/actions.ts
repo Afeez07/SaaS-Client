@@ -30,6 +30,9 @@ export async function signup(formData: FormData) {
   const { error, data } = await supabase.auth.signUp({
     email,
     password,
+    options: {
+      emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://saas-cliet-dashboard.netlify.app'}/auth/callback`,
+    },
   })
 
   if (error) {

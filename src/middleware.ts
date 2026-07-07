@@ -54,10 +54,6 @@ export async function middleware(request: NextRequest) {
     }
   )
 
-  // For the UI prototype, we bypass actual authentication checks
-  // so the user can freely explore the /dashboard and other routes.
-  
-  /*
   const { data: { user } } = await supabase.auth.getUser()
 
   const isDashboardRoute = request.nextUrl.pathname.startsWith('/dashboard')
@@ -73,7 +69,6 @@ export async function middleware(request: NextRequest) {
     url.pathname = '/dashboard'
     return NextResponse.redirect(url)
   }
-  */
 
   return response
 }

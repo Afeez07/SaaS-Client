@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stoodeo Dashboard 🚀
 
-## Getting Started
+A modern, highly-responsive SaaS client portal and administrative dashboard. Built with Next.js, this application offers a premium user interface for managing clients, tracking project progress, monitoring payments, and handling support tickets.
 
-First, run the development server:
+![Stoodeo Dashboard](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000&h=600)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [https://saas-client-dashboard.netlify.app/](https://saas-client-dashboard.netlify.app/) with your browser to see the result.
+- **Secure Authentication:** Complete login and signup flows powered by Supabase.
+- **Client Management:** Add, edit, and track clients with detailed revenue and status metrics.
+- **Project Tracking:** Monitor ongoing projects with progress bars, due dates, and financial data.
+- **Financial Overview:** Track payments, generate records, and visualize total revenue.
+- **Support Ticketing:** Built-in ticketing system to manage client requests and communication.
+- **Modern UI/UX:** Built with Tailwind CSS, Lucide icons, and a custom glassmorphism design system for a premium feel.
+- **Route Protection:** Next.js Middleware ensures secure routes are only accessible to authenticated administrators.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Database & Auth:** [Supabase](https://supabase.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Forms & Validation:** React Hook Form + Zod
+- **Deployment:** [Netlify](https://www.netlify.com/)
 
-## Learn More
+## 🚀 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project is optimized for Edge deployment and is proudly hosted on **Netlify**. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The deployment pipeline is configured to automatically build and deploy the Next.js application, utilizing Netlify Edge Functions for optimal performance and secure route middleware.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Live URL: [https://saas-cliet-dashboard.netlify.app](https://saas-cliet-dashboard.netlify.app)
 
-## Deploy on Netlify
+## 💻 Local Development
 
-The easiest way to deploy your Next.js app is to use the [Netlify Platform] from the creators of Next.js.
+To run this project locally, follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd stoodeo-dashboard
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   Create a `.env.local` file in the root directory and add your Supabase credentials:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   NEXT_PUBLIC_SITE_URL=http://localhost:3000
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the application**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+*Built with ❤️ by Demola AI*

@@ -29,7 +29,7 @@ This project is optimized for Edge deployment and is proudly hosted on **Netlify
 
 The deployment pipeline is configured to automatically build and deploy the Next.js application, utilizing Netlify Edge Functions for optimal performance and secure route middleware.
 
-Live URL: [https://saas-cliet-dashboard.netlify.app](https://saas-cliet-dashboard.netlify.app)
+Live URL: [https://saas-client-dashboard.netlify.app](https://saas-client-dashboard.netlify.app)
 
 ## 💻 Local Development
 
